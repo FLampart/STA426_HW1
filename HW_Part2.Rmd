@@ -1,0 +1,29 @@
+---
+title: "Homework 1 Part 2:"
+author: "FLampart"
+date: "September 25, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<br>
+
+##### Sample 100 from	a	log-normal distributon:
+```{r}
+x <- rlnorm(100, mean = 1, sd = .25)
+```
+<br>
+
+##### Create	a	histogram	of	the	distributon	and	the	distributon	on the	log	scale
+```{r}
+hist(x)
+hist(log(x))
+```
+<br>
+
+##### Report	the	mean	and	variance	of	the	sample	in	line	in	the	text:
+
+* _Mean equals `r mean(x)` and the variance equals `r var(x)`_
+
